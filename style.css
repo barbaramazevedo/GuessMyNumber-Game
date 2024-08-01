@@ -47,7 +47,7 @@ main {
 
 /* ELEMENTS STYLE */
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
   position: absolute;
   width: 100%;
@@ -120,3 +120,65 @@ i {
 .label-score {
   margin-bottom: 2rem;
 }
+
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 1.2rem;
+    padding: 1rem 1.2rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .number {
+    font-size: 4rem;
+    width: 12rem;
+    padding: 1.5rem 0rem;
+    }
+  .between {
+  font-size: 1.2rem;
+  }
+  .guess {
+    font-size: 3.2rem;
+    padding: 1.7rem;
+    width: 18rem;
+  }
+  .right {
+    width: 52rem;
+    font-size: 1.5rem;
+  }
+  main {
+    flex-direction: column-reverse; /* Keeps .right on top and .left on bottom */
+    justify-content: center; /* Center elements vertically */
+  }
+  
+  .left {
+    width: 52rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right {
+    width: 52rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center;
+    flex-direction: column; /* Center content horizontally */
+  }
+  .message {
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+  }
+  .score, .highscore,
+  .label-score, .label-highscore {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  header {
+    position: relative;
+    height: 30vh;
+    border-bottom: 7px solid #eee;
+  }
